@@ -34,7 +34,7 @@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
 <liferay-theme:defineObjects />
 <portlet:defineObjects />
 <%
-	FilesystemAccessDisplayContext filesystemAccessDisplayContext = new FilesystemAccessDisplayContext(renderRequest);
+	HelloDisplayContext filesystemAccessDisplayContext = new HelloDisplayContext(renderRequest);
 	HelloPortletInstanceConfiguration filesystemAccessPortletInstanceConfiguration = filesystemAccessDisplayContext.getFilesystemAccessPortletInstanceConfiguration();
 	String rootPath = StringPool.BLANK;
 	boolean showPermissions = false;
